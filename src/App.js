@@ -32,7 +32,8 @@ function App() {
             <button className="search-button" type="submit">Search</button>
         </form>
         <div>
-            {recipes.map(recipe => (<Recipe title={recipe.recipe.label} calories={recipe.recipe.calories}/>))}
+            {recipes.map(recipe => (<Recipe title={recipe.recipe.label} calories={recipe.recipe.calories}
+            image={recipe.recipe.image}/>))}
         </div>
     </div>
   );
